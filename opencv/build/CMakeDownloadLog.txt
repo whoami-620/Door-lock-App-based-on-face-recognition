@@ -1,0 +1,800 @@
+#use_cache "/home/pi/opencv/.cache"
+#do_unpack "v0.1.1d.zip" "37479d90e3a5d47f132f512b22cbe206" "https://github.com/opencv/ade/archive/v0.1.1d.zip" "/home/pi/opencv/build/3rdparty/ade"
+#cmake_download "/home/pi/opencv/.cache/ade/37479d90e3a5d47f132f512b22cbe206-v0.1.1d.zip" "https://github.com/opencv/ade/archive/v0.1.1d.zip"
+#   Trying 13.229.188.59...
+# TCP_NODELAY set
+# Connected to github.com (13.229.188.59) port 443 (#0)
+# ALPN, offering http/1.1
+# successfully set certificate verify locations:
+#   CAfile: /etc/ssl/certs/ca-certificates.crt
+#   CApath: /etc/ssl/certs
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS handshake, Client hello (1):
+# [512 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS handshake, Server hello (2):
+# [122 bytes data]
+# [5 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS handshake, [no content] (0):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+# [25 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS handshake, [no content] (0):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Certificate (11):
+# [2976 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS handshake, [no content] (0):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, CERT verify (15):
+# [264 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS handshake, [no content] (0):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Finished (20):
+# [36 bytes data]
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+# [1 bytes data]
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS handshake, [no content] (0):
+# [1 bytes data]
+# TLSv1.3 (OUT), TLS handshake, Finished (20):
+# [36 bytes data]
+# SSL connection using TLSv1.3 / TLS_AES_128_GCM_SHA256
+# ALPN, server accepted to use http/1.1
+# Server certificate:
+#  subject: C=US; ST=California; L=San Francisco; O=GitHub, Inc.; CN=github.com
+#  start date: May  5 00:00:00 2020 GMT
+#  expire date: May 10 12:00:00 2022 GMT
+#  subjectAltName: host "github.com" matched cert's "github.com"
+#  issuer: C=US; O=DigiCert Inc; OU=www.digicert.com; CN=DigiCert SHA2 High Assurance Server CA
+#  SSL certificate verify ok.
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS app data, [no content] (0):
+# [1 bytes data]
+# GET /opencv/ade/archive/v0.1.1d.zip HTTP/1.1
+# Host: github.com
+# User-Agent: curl/7.62.0
+# Accept: */*
+# 
+# [5 bytes data]
+# TLSv1.3 (IN), TLS handshake, [no content] (0):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+# [57 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS handshake, [no content] (0):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+# [57 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# HTTP/1.1 302 Found
+# Server: GitHub.com
+# Date: Sun, 14 Mar 2021 09:50:36 GMT
+# Content-Type: text/html; charset=utf-8
+# Vary: X-PJAX, Accept-Encoding, Accept, X-Requested-With
+# Location: https://codeload.github.com/opencv/ade/zip/v0.1.1d
+# Cache-Control: max-age=0, private
+# Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+# X-Frame-Options: deny
+# X-Content-Type-Options: nosniff
+# X-XSS-Protection: 1; mode=block
+# Referrer-Policy: no-referrer-when-downgrade
+# Expect-CT: max-age=2592000, report-uri="https://api.github.com/_private/browser/errors"
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# Content-Security-Policy: default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com online.visualstudio.com/api/v1/locations; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-6832eced.js gist.github.com/socket-worker-6832eced.js
+# Content-Length: 116
+# X-GitHub-Request-Id: 5184:6E01:82F983:95E61B:604DDC6B
+# 
+# Ignoring the response-body
+# [116 bytes data]
+# Connection #0 to host github.com left intact
+# Issue another request to this URL: 'https://codeload.github.com/opencv/ade/zip/v0.1.1d'
+#   Trying 54.251.140.56...
+# TCP_NODELAY set
+# Connected to codeload.github.com (54.251.140.56) port 443 (#1)
+# ALPN, offering http/1.1
+# successfully set certificate verify locations:
+#   CAfile: /etc/ssl/certs/ca-certificates.crt
+#   CApath: /etc/ssl/certs
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS handshake, Client hello (1):
+# [512 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS handshake, Server hello (2):
+# [122 bytes data]
+# [5 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS handshake, [no content] (0):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+# [25 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS handshake, [no content] (0):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Certificate (11):
+# [2376 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS handshake, [no content] (0):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, CERT verify (15):
+# [79 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS handshake, [no content] (0):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Finished (20):
+# [36 bytes data]
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+# [1 bytes data]
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS handshake, [no content] (0):
+# [1 bytes data]
+# TLSv1.3 (OUT), TLS handshake, Finished (20):
+# [36 bytes data]
+# SSL connection using TLSv1.3 / TLS_AES_128_GCM_SHA256
+# ALPN, server accepted to use http/1.1
+# Server certificate:
+#  subject: C=US; ST=California; L=San Francisco; O=GitHub, Inc.; CN=*.github.com
+#  start date: Mar  4 00:00:00 2021 GMT
+#  expire date: Mar  9 23:59:59 2022 GMT
+#  subjectAltName: host "codeload.github.com" matched cert's "*.github.com"
+#  issuer: C=US; O=DigiCert Inc; CN=DigiCert TLS Hybrid ECC SHA384 2020 CA1
+#  SSL certificate verify ok.
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS app data, [no content] (0):
+# [1 bytes data]
+# GET /opencv/ade/zip/v0.1.1d HTTP/1.1
+# Host: codeload.github.com
+# User-Agent: curl/7.62.0
+# Accept: */*
+# 
+# [5 bytes data]
+# TLSv1.3 (IN), TLS handshake, [no content] (0):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+# [57 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS handshake, [no content] (0):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+# [57 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# HTTP/1.1 200 OK
+# Access-Control-Allow-Origin: https://render.githubusercontent.com
+# content-disposition: attachment; filename=ade-0.1.1d.zip
+# Content-Length: 166008
+# Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+# Content-Type: application/zip
+# ETag: "2f405273a661a3185fc7ddef31f5cca998c12feb0ebf908a1628782079f89a2f"
+# Strict-Transport-Security: max-age=31536000
+# Vary: Authorization,Accept-Encoding
+# X-Content-Type-Options: nosniff
+# X-Frame-Options: deny
+# X-XSS-Protection: 1; mode=block
+# Date: Sun, 14 Mar 2021 09:50:36 GMT
+# X-GitHub-Request-Id: 5187:5615:5D60:11A37:604DDC6C
+# 
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1098 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS app data, [no content] (0):
+# [1 bytes data]
+# [510 bytes data]
+# Connection #1 to host codeload.github.com left intact
+# 
+
+#check_md5 "/home/pi/opencv/.cache/ade/37479d90e3a5d47f132f512b22cbe206-v0.1.1d.zip"
+#mkdir "/home/pi/opencv/build/3rdparty/ade"
+#unpack "/home/pi/opencv/build/3rdparty/ade" "/home/pi/opencv/.cache/ade/37479d90e3a5d47f132f512b22cbe206-v0.1.1d.zip"
+#do_copy "boostdesc_bgm.i" "0ea90e7a8f3f7876d450e4149c97c74f" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_bgm.i" "/home/pi/opencv/build/downloads/xfeatures2d"
+#missing "/home/pi/opencv/build/downloads/xfeatures2d/boostdesc_bgm.i"
+#cmake_download "/home/pi/opencv/.cache/xfeatures2d/boostdesc/0ea90e7a8f3f7876d450e4149c97c74f-boostdesc_bgm.i" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_bgm.i"
+#   Trying 0.0.0.0...
+# TCP_NODELAY set
+# connect to 0.0.0.0 port 443 failed: Connection refused
+# Failed to connect to raw.githubusercontent.com port 443: Connection refused
+# Closing connection 0
+# 
+
+#do_copy "boostdesc_bgm_bi.i" "232c966b13651bd0e46a1497b0852191" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_bgm_bi.i" "/home/pi/opencv/build/downloads/xfeatures2d"
+#missing "/home/pi/opencv/build/downloads/xfeatures2d/boostdesc_bgm_bi.i"
+#cmake_download "/home/pi/opencv/.cache/xfeatures2d/boostdesc/232c966b13651bd0e46a1497b0852191-boostdesc_bgm_bi.i" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_bgm_bi.i"
+#   Trying 0.0.0.0...
+# TCP_NODELAY set
+# connect to 0.0.0.0 port 443 failed: Connection refused
+# Failed to connect to raw.githubusercontent.com port 443: Connection refused
+# Closing connection 0
+# 
+
+#do_copy "boostdesc_bgm_hd.i" "324426a24fa56ad9c5b8e3e0b3e5303e" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_bgm_hd.i" "/home/pi/opencv/build/downloads/xfeatures2d"
+#missing "/home/pi/opencv/build/downloads/xfeatures2d/boostdesc_bgm_hd.i"
+#cmake_download "/home/pi/opencv/.cache/xfeatures2d/boostdesc/324426a24fa56ad9c5b8e3e0b3e5303e-boostdesc_bgm_hd.i" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_bgm_hd.i"
+#   Trying 0.0.0.0...
+# TCP_NODELAY set
+# connect to 0.0.0.0 port 443 failed: Connection refused
+# Failed to connect to raw.githubusercontent.com port 443: Connection refused
+# Closing connection 0
+# 
+
+#do_copy "boostdesc_binboost_064.i" "202e1b3e9fec871b04da31f7f016679f" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_binboost_064.i" "/home/pi/opencv/build/downloads/xfeatures2d"
+#missing "/home/pi/opencv/build/downloads/xfeatures2d/boostdesc_binboost_064.i"
+#cmake_download "/home/pi/opencv/.cache/xfeatures2d/boostdesc/202e1b3e9fec871b04da31f7f016679f-boostdesc_binboost_064.i" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_binboost_064.i"
+#   Trying 0.0.0.0...
+# TCP_NODELAY set
+# connect to 0.0.0.0 port 443 failed: Connection refused
+# Failed to connect to raw.githubusercontent.com port 443: Connection refused
+# Closing connection 0
+# 
+
+#do_copy "boostdesc_binboost_128.i" "98ea99d399965c03d555cef3ea502a0b" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_binboost_128.i" "/home/pi/opencv/build/downloads/xfeatures2d"
+#missing "/home/pi/opencv/build/downloads/xfeatures2d/boostdesc_binboost_128.i"
+#cmake_download "/home/pi/opencv/.cache/xfeatures2d/boostdesc/98ea99d399965c03d555cef3ea502a0b-boostdesc_binboost_128.i" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_binboost_128.i"
+#   Trying 0.0.0.0...
+# TCP_NODELAY set
+# connect to 0.0.0.0 port 443 failed: Connection refused
+# Failed to connect to raw.githubusercontent.com port 443: Connection refused
+# Closing connection 0
+# 
+
+#do_copy "boostdesc_binboost_256.i" "e6dcfa9f647779eb1ce446a8d759b6ea" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_binboost_256.i" "/home/pi/opencv/build/downloads/xfeatures2d"
+#missing "/home/pi/opencv/build/downloads/xfeatures2d/boostdesc_binboost_256.i"
+#cmake_download "/home/pi/opencv/.cache/xfeatures2d/boostdesc/e6dcfa9f647779eb1ce446a8d759b6ea-boostdesc_binboost_256.i" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_binboost_256.i"
+#   Trying 0.0.0.0...
+# TCP_NODELAY set
+# connect to 0.0.0.0 port 443 failed: Connection refused
+# Failed to connect to raw.githubusercontent.com port 443: Connection refused
+# Closing connection 0
+# 
+
+#do_copy "boostdesc_lbgm.i" "0ae0675534aa318d9668f2a179c2a052" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_lbgm.i" "/home/pi/opencv/build/downloads/xfeatures2d"
+#missing "/home/pi/opencv/build/downloads/xfeatures2d/boostdesc_lbgm.i"
+#cmake_download "/home/pi/opencv/.cache/xfeatures2d/boostdesc/0ae0675534aa318d9668f2a179c2a052-boostdesc_lbgm.i" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_lbgm.i"
+#   Trying 0.0.0.0...
+# TCP_NODELAY set
+# connect to 0.0.0.0 port 443 failed: Connection refused
+# Failed to connect to raw.githubusercontent.com port 443: Connection refused
+# Closing connection 0
+# 
+
+#do_copy "vgg_generated_48.i" "e8d0dcd54d1bcfdc29203d011a797179" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/fccf7cd6a4b12079f73bbfb21745f9babcd4eb1d/vgg_generated_48.i" "/home/pi/opencv/build/downloads/xfeatures2d"
+#missing "/home/pi/opencv/build/downloads/xfeatures2d/vgg_generated_48.i"
+#cmake_download "/home/pi/opencv/.cache/xfeatures2d/vgg/e8d0dcd54d1bcfdc29203d011a797179-vgg_generated_48.i" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/fccf7cd6a4b12079f73bbfb21745f9babcd4eb1d/vgg_generated_48.i"
+#   Trying 0.0.0.0...
+# TCP_NODELAY set
+# connect to 0.0.0.0 port 443 failed: Connection refused
+# Failed to connect to raw.githubusercontent.com port 443: Connection refused
+# Closing connection 0
+# 
+
+#do_copy "vgg_generated_64.i" "7126a5d9a8884ebca5aea5d63d677225" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/fccf7cd6a4b12079f73bbfb21745f9babcd4eb1d/vgg_generated_64.i" "/home/pi/opencv/build/downloads/xfeatures2d"
+#missing "/home/pi/opencv/build/downloads/xfeatures2d/vgg_generated_64.i"
+#cmake_download "/home/pi/opencv/.cache/xfeatures2d/vgg/7126a5d9a8884ebca5aea5d63d677225-vgg_generated_64.i" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/fccf7cd6a4b12079f73bbfb21745f9babcd4eb1d/vgg_generated_64.i"
+#   Trying 0.0.0.0...
+# TCP_NODELAY set
+# connect to 0.0.0.0 port 443 failed: Connection refused
+# Failed to connect to raw.githubusercontent.com port 443: Connection refused
+# Closing connection 0
+# 
+
+#do_copy "vgg_generated_80.i" "7cd47228edec52b6d82f46511af325c5" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/fccf7cd6a4b12079f73bbfb21745f9babcd4eb1d/vgg_generated_80.i" "/home/pi/opencv/build/downloads/xfeatures2d"
+#missing "/home/pi/opencv/build/downloads/xfeatures2d/vgg_generated_80.i"
+#cmake_download "/home/pi/opencv/.cache/xfeatures2d/vgg/7cd47228edec52b6d82f46511af325c5-vgg_generated_80.i" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/fccf7cd6a4b12079f73bbfb21745f9babcd4eb1d/vgg_generated_80.i"
+#   Trying 0.0.0.0...
+# TCP_NODELAY set
+# connect to 0.0.0.0 port 443 failed: Connection refused
+# Failed to connect to raw.githubusercontent.com port 443: Connection refused
+# Closing connection 0
+# 
+
+#do_copy "vgg_generated_120.i" "151805e03568c9f490a5e3a872777b75" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/fccf7cd6a4b12079f73bbfb21745f9babcd4eb1d/vgg_generated_120.i" "/home/pi/opencv/build/downloads/xfeatures2d"
+#missing "/home/pi/opencv/build/downloads/xfeatures2d/vgg_generated_120.i"
+#cmake_download "/home/pi/opencv/.cache/xfeatures2d/vgg/151805e03568c9f490a5e3a872777b75-vgg_generated_120.i" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/fccf7cd6a4b12079f73bbfb21745f9babcd4eb1d/vgg_generated_120.i"
+#   Trying 0.0.0.0...
+# TCP_NODELAY set
+# connect to 0.0.0.0 port 443 failed: Connection refused
+# Failed to connect to raw.githubusercontent.com port 443: Connection refused
+# Closing connection 0
+# 
+
+#do_copy "face_landmark_model.dat" "7505c44ca4eb54b4ab1e4777cb96ac05" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/8afa57abc8229d611c4937165d20e2a2d9fc5a12/face_landmark_model.dat" "/home/pi/opencv/build/share/opencv4/testdata/cv/face/"
+#missing "/home/pi/opencv/build/share/opencv4/testdata/cv/face//face_landmark_model.dat"
+#cmake_download "/home/pi/opencv/.cache/data/7505c44ca4eb54b4ab1e4777cb96ac05-face_landmark_model.dat" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/8afa57abc8229d611c4937165d20e2a2d9fc5a12/face_landmark_model.dat"
+#   Trying 0.0.0.0...
+# TCP_NODELAY set
+# connect to 0.0.0.0 port 443 failed: Connection refused
+# Failed to connect to raw.githubusercontent.com port 443: Connection refused
+# Closing connection 0
+# 
+

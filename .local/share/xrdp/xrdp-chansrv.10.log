@@ -1,0 +1,6 @@
+[20210305-10:12:52] [CORE ] main: app started pid 965(0x000003c5)
+[20210305-10:12:52] [INFO ] main: DISPLAY env var set to :10.0
+[20210305-10:12:52] [INFO ] main: using DISPLAY 10
+[20210305-10:12:52] [INFO ] channel_thread_loop: thread start
+[20210305-10:12:52] [INFO ] Socket 12: AF_UNIX connection received
+[20210305-10:15:36] [INFO ] channel_thread_loop: trans_check_wait_objs error resetting

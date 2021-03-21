@@ -1,0 +1,11 @@
+import cv2
+cv2._version_
+cv2._version
+import cv2
+cv2.version
+cv2.__version__
+exit()
+import cv2
+import cv
+cv
+import cv2

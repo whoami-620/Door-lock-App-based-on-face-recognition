@@ -1,0 +1,2 @@
+/home/pi/cmake-3.13.0/Source/Checks/Curses-build/CMakeFiles/rebuild_cache.dir
+/home/pi/cmake-3.13.0/Source/Checks/Curses-build/CMakeFiles/edit_cache.dir
