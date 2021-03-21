@@ -657,3 +657,30 @@ sudo apt-get autoclean
 sudo apt-get install deborphan -y
 sudo debfoster
 df -h
+git add -A
+git commit -m"/home/pi/LiveFaceReco_RaspberryPi/build"
+git remote add origin https://github.com/whoami-620/Employee-check-in-system-based-on-face-recognition.git
+git push -u origin master
+mkdir ~/git-rectify
+cd ~/git-rectify
+apt-get source git
+sudo apt-get build-dep git
+sudo apt-get install libcurl4-openssl-dev
+git version
+cd git-2.20.1/
+vim ./debian/control
+./debian/control
+sudo ./debian/control
+vim debian/control 
+cd
+vim ./debian/control
+cd git-2.20.1/
+git version
+cd git-2.20.1/
+cd git-2.17.1/
+cd git-2.20.1/
+git-2.20.1/
+git version
+sudo apt-get install libcurl4-openssl-dev
+cd git-2.20.1/
+vim ./debian/control  

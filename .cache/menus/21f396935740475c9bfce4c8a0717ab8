@@ -1184,6 +1184,20 @@ galculator
 
 Utility
 
+-gvim.desktop
+gVim
+编辑文本文件
+gvim
+
+11
+Text Editor
+gvim -f %F
+2
+0
+gvim
+
+Utility;TextEditor
+Text,editor
 -lxterminal.desktop
 LX 终端
 使用命令行
